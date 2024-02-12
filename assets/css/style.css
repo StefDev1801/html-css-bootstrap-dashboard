@@ -1,3 +1,41 @@
-body{
-    background-color: red;
+/* TODO: */
+/* #region Utilities */
+.debug *{
+    border: 1px dashed;
 }
+.debug {
+    background-color: rgb(255, 63, 63);
+    
+}
+
+/* color palette */
+:root{
+--boot-dash_goldbell:#ff8f00;
+--boot-dash_primary:#1b72e8;
+--boot-dash_primary-btn:#165bba;
+--boot-dash_search-bg:#e5e5e5;
+--boot-dash_card-surroundings:#f7f7f7;
+--boot-dash_card-header:#f7f7f7;
+--boot-dash_card-body:white;
+--boot-dash_icon-actions:#6c757d;
+--boot-dash_left-bg-up:#051e34;
+--boot-dash_left-bg-down: #11283e;
+--boot-dash_angle-brakets:#f26551;
+/* danger */
+/* accept */
+/* da controllare se c'è lo yellow */
+--boot-dash_histogram:#3e76d3;
+}
+/* #endregion */
+
+/* #region Common */
+/* #endregion */
+
+/* #region Header */
+/* #endregion */
+
+/* #region Footer */
+/* #endregion */
+
+/* #region Media Queries */
+/* #endregion */
