@@ -4,15 +4,20 @@
     border: 1px dashed;
 }
 .debug {
-    background-color: rgb(255, 63, 63);
-    
+    /* background-color: rgb(255, 63, 63); */
+    #site_header{
+        height: 50px;
+    }
+    .right_main{
+        min-height: 100%;
+    }
 }
 
 /* color palette */
 :root{
 --boot-dash_goldbell:#ff8f00;
 --boot-dash_primary:#1b72e8;
---boot-dash_primary-btn:#165bba;
+--boot-dash_primary-darker:#165bba;
 --boot-dash_search-bg:#e5e5e5;
 --boot-dash_card-surroundings:#f7f7f7;
 --boot-dash_card-header:#f7f7f7;
@@ -32,10 +37,46 @@
 /* #endregion */
 
 /* #region Header */
+
 /* #endregion */
 
-/* #region Footer */
+/* #region Main */
+.left, .right{
+    height: calc(100vh - 50px);
+    /* 50px is debug header */
+}
+.left{
+    background-color: var(--boot-dash_left-bg-up);
+    color: white;
+}
+.right{
+    overflow: auto;
+    .right_header{
+        background-color: var(--boot-dash_primary);
+        color: white;
+    }
+    .right_main{
+        background-color: var(--boot-dash_search-bg);
+        /* cosa gli posso dare se voglio un colore di sfondo anche se non c'è scritto niente? */
+    }
+}
 /* #endregion */
 
 /* #region Media Queries */
+/* @media screen  and (min-width:576px ) { 
+    devo mettere max width?????*/
+    body{
+        background-color: rgb(0, 255, 21);
+    }
+/* } */
+@media screen  and (min-width:768px ) {
+    body{
+        background-color: rgb(255, 238, 0);
+    }
+}
+@media screen  and (min-width:992px ) {
+    body{
+        background-color: rgb(255, 102, 0);
+    }
+}
 /* #endregion */
